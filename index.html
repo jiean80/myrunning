@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>먹은만큼 빼자</title>
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+</head>
+<style>
+	.wrap {width:1400px; height: 900px; margin:0; margin-top:0px; overflow: hidden; position: relative;}
+	.bimg {width:1400px; height:800px; margin:0;}
+
+	.clickbox {position: absolute; top:200px; left:52%;}
+	.textbox {position: absolute; top:200px; left:43%;}
+
+	
+
+
+</style>
+
+
+<body>
+	<div class="wrap">
+		<img id="bimg" src="./img/bimg.jpg">
+
+	<div id="output" style="width:800px; height: 300px; background:none; color: black; text-align: center; line-height: 300px; position: absolute; top:200px; left:20%;">당신이 달려야 하는 시간</div>
+
+	<input type="text" placeholder="kcal" size="14" class="textbox" id="mykcal"> kcal
+	<button class="clickbox" id="but">달린다!</button>
+
+
+	<script type="text/javascript">
+		
+		but.onclick = function(){
+
+			var runkcal = mykcal.value * 0.1;
+			var finalOutput = "당신은 " + runkcal + " 분을 달리면 " + mykcal.value + " kcal를 소모합니다.";
+
+			output.innerHTML = finalOutput;
+		}
+
+
+
+
+	</script>
+
+
+
+
+	</div>
+
+</body>
+</html>
